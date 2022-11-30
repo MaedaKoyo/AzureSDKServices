@@ -1,0 +1,11 @@
+//content moderator (テキストのフィルタリング)
+curl -v -X POST "{endpoint}/contentmoderator/moderate/v1.0/ProcessText/Screen?autocorrect=True&PII=True&classify=True&language=Eng" \
+-H "Content-Type: text/plain" \
+-H "Ocp-Apim-Subscription-Key: {key}" \
+--data-ascii "Is this a crap email abcdef@abcd.com, phone: 6657789887, IP: 255.255.255.255, 1 Microsoft Way, Redmond, WA 98052"
+
+//content moderator (画像のフィルタリング)
+curl -v -X POST "{endpoint}/contentmoderator/moderate/v1.0/ProcessImage/Evaluate?CacheImage=True" \
+-H "Content-Type: application/json" \
+-H "Ocp-Apim-Subscription-Key: {key}" \
+--data-ascii "{\"DataRepresentation\":\"URL\", \"Value\":\"https://pics.dmm.co.jp/digital/video/1stars00664/1stars00664ps.jpg\"}"

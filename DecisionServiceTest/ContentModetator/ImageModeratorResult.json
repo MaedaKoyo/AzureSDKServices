@@ -1,0 +1,24 @@
+{
+    "AdultClassificationScore": 0.9974572062492371,
+    "IsImageAdultClassified": true,
+    "RacyClassificationScore": 0.9988416004925966,
+    "IsImageRacyClassified": true,
+    "Result": true,
+    "CacheID": "5da0187a-fa14-4a38-9868-90690a5b6a3d_637992649664109380",
+    "AdvancedInfo": [
+        {
+            "Key": "ImageDownloadTimeInMs",
+            "Value": "238"
+        },
+        {
+            "Key": "ImageSizeInBytes",
+            "Value": "14849"
+        }
+    ],
+    "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+    },
+    "TrackingId": "22e2963e-fdcc-4867-b16a-0a39a3ab3479"
+}
